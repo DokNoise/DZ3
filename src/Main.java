@@ -199,12 +199,11 @@ public class Main {
         for (int i = 1; i <= Math.sqrt(23436); i++){
             if (23436 % i == 0)
                 System.out.print(i + " " + 23436 / i);
-        }
-
+        }System.out.println("");
         for (int i = 1; i <= Math.sqrt(190187200); i++){
             if (190187200 % i == 0)
                 System.out.print(i + " " + 190187200 / i);
-        }
+        }System.out.println("");
         for (long i = 1; i <= Math.sqrt(380457890232L); i++){
             if (380457890232L % i == 0)
                 System.out.print(i + " " + 380457890232L / i);
