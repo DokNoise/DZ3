@@ -1,6 +1,4 @@
 
-import com.sun.source.tree.WhileLoopTree;
-
 import java.util.Scanner;
 
 public class Main {
@@ -152,7 +150,43 @@ public class Main {
                 |  Й й  ||  Ф ф  ||  Я я  |
                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-        
+        char Bukva = 1040;
+        for (int i = 6; i > 0; i--){
+            System.out.println("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            for (int j = 2; j > 0; j--){
+                System.out.print("|  "+ Bukva + " " +(char)(Bukva + 32) + "  |");
+                Bukva += 10;
+            } for (int j = 1; j > 0; j--){
+                Bukva += 1;
+                System.out.print("|  "+ Bukva + " " +(char)(Bukva + 32) + "  |");
+            }
+            Bukva -= 20;
+        }for (int i = 1; i > 0; i--) {
+            System.out.println("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            for (int j = 1; j > 0; j--) {
+                Bukva = 1025;
+                System.out.print("|  " + Bukva + " ");
+                Bukva = 1105;
+                System.out.print(Bukva + "  |");
+            }
+                Bukva = 1056;
+            for (int j = 2; j > 0; j--){
+                System.out.print("|  "+ Bukva + " " +(char)(Bukva + 32) + "  |");
+                Bukva += 11;
+            }
+        } Bukva -= 32;
+        for (int i = 4; i > 0; i--){
+            System.out.println("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            for (int j = 2; j > 0; j--){
+                System.out.print("|  "+ Bukva + " " +(char)(Bukva + 32) + "  |");
+                Bukva += 11;
+            } for (int j = 1; j > 0; j--){
+                System.out.print("|  "+ Bukva + " " +(char)(Bukva + 32) + "  |");
+            }
+            Bukva -= 21;
+        }
+        for (int i = 1; i > 0; i--)
+            System.out.println("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 
         /* 2*) Валентина прогуляла лекцию по математике.
         Преподаватель решил подшутить над нерадивой студенткой и
@@ -162,7 +196,18 @@ public class Main {
         Решить такое вручную, как вы понимаете, практически нереально.
         Вот Валентина и обратилась к вам за помощью.*/
 
+        for (int i = 1; i <= Math.sqrt(23436); i++){
+            if (23436 % i == 0)
+                System.out.print(i + " " + 23436 / i);
+        }
 
-
+        for (int i = 1; i <= Math.sqrt(190187200); i++){
+            if (190187200 % i == 0)
+                System.out.print(i + " " + 190187200 / i);
+        }
+        for (long i = 1; i <= Math.sqrt(380457890232L); i++){
+            if (380457890232L % i == 0)
+                System.out.print(i + " " + 380457890232L / i);
+        }
     }
 }
