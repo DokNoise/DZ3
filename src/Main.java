@@ -170,7 +170,7 @@ public class Main {
          bukva -= 32;
         for (int i = 0; i < 4; i++){
             System.out.println("\n^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-            for (int j = 3; j > 0; j--){
+            for (int j = 0; j < 3; j++){
                 System.out.print("|  "+ bukva + " " +(char)(bukva + 32) + "  |");
                 bukva += 11;
             }
